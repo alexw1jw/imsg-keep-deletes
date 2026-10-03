@@ -1,0 +1,17 @@
+[project]
+name = "imsg-keep-deletes"
+version = "0.1.0"
+description = "Monitor iMessage for unsent inbound messages on macOS"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+imsg-kd = "imsg_keep_deletes.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
